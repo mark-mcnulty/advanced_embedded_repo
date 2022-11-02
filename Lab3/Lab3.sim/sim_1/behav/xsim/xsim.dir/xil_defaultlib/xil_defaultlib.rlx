@@ -1,0 +1,22 @@
+0.7
+2020.2
+Apr 18 2022
+16:05:34
+C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/2sToPixel.vhd,1667172616,vhdl,,,,twostopixel,,,,,,,,
+C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/Lab3.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1667168263,verilog,,,,blk_mem_gen_0,,,../../../../Lab3.gen/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/Lab3.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,,,,,,,
+C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI.vhd,1667230044,vhdl,,,,acquiretohdmi,,,,,,,,
+C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl,1667234744,vhdl,,,,acquiretohdmi_datapath,,,,,,,,
+C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_fsm.vhdl,1667236834,vhdl,,,,acquiretohdmi_fsm,,,,,,,,
+C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_package.vhd,1667180832,vhdl,C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_fsm.vhdl,,,acquiretohdmi_package,,,,,,,,
+C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_tb.vhd,1667232150,vhdl,,,,acquiretohdmi_tb,,,,,,,,
+C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/an7606.vhd,1666671662,vhdl,,,,an7606,,,,,,,,
+C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/basicBuildingBlocksVhdl_package.vhd,1664392281,vhdl,C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl,,,basicbuildingblocks_package,,,,,,,,
+C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericComparator.vhd,1666906909,vhdl,,,,genericcompare,,,,,,,,
+C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericCounter.vhd,1663792896,vhdl,,,,genericcounter,,,,,,,,
+C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericMux8x1.vhd,1663792896,vhdl,,,,genericmux8x1,,,,,,,,
+C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericRegister.vhd,1663792896,vhdl,,,,genericregister,,,,,,,,
+C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/hdmi_package.vhd,1666809349,vhdl,C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_package.vhd,,,hdmi_package,,,,,,,,
+C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/scopeFace.vhd,1662744966,vhdl,,,,scopeface,,,,,,,,
+C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/signedComparator.vhd,1666999596,vhdl,,,,signedcomparator,,,,,,,,
+C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/videoSignalGenerator.vhdl,1663784237,vhdl,,,,videosignalgenerator,,,,,,,,

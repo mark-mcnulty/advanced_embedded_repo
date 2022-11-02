@@ -81,22 +81,26 @@ BEGIN
     button_process :process
     begin
         
-        btn_t <= "000"; 
+        btn_t <= "111";
         wait until (resetn_t = '1');
         wait for clk_period;
         
-        -- commment out the following for forced mode
-        --btn_t <= "010";     -- trigger mode
+        -- commment out the following for forced mode        
+--        -- trigger mode
+        btn_t <= "110";     
+--        btn_t <= "000";
+        -- trigger mode
         
         wait until (an7606reset_t = '1');
         wait until (an7606reset_t = '0');
         wait for 100ns;
 
         -- Leave this line in regardless of the mode
-        btn_t <= "001";
+        -- single
+        btn_t <= "101";
         
         wait for 4*clk_period;
-        btn_t <= "000";
+        btn_t <= "111";
         wait;
     end process;   
 

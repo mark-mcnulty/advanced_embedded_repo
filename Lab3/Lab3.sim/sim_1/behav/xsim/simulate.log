@@ -1,0 +1,13 @@
+Time resolution is 1 ps
+Block Memory Generator module acquireToHDMI_tb.uut.datapath_inst.dataStorage_ch1.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module acquireToHDMI_tb.uut.datapath_inst.dataStorage_ch2.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module acquireToHDMI_tb.uut.datapath_inst.dataStorage_ch1.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module acquireToHDMI_tb.uut.datapath_inst.dataStorage_ch2.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module acquireToHDMI_tb.uut.datapath_inst.dataStorage_ch1.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module acquireToHDMI_tb.uut.datapath_inst.dataStorage_ch2.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module acquireToHDMI_tb.uut.datapath_inst.dataStorage_ch1.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module acquireToHDMI_tb.uut.datapath_inst.dataStorage_ch2.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+blk_mem_gen_v8_4_5 collision detected at time: 3369148146, Instance: acquireToHDMI_tb.uut.datapath_inst.dataStorage_ch1.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst , A write address: 21a, B  read address: 21a
+blk_mem_gen_v8_4_5 collision detected at time: 5418142730, Instance: acquireToHDMI_tb.uut.datapath_inst.dataStorage_ch2.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst , A write address: 36c, B  read address: 36c
+blk_mem_gen_v8_4_5 collision detected at time: 5974936786, Instance: acquireToHDMI_tb.uut.datapath_inst.dataStorage_ch1.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst , A write address: 3c8, B  read address: 3c8
+INFO: xsimkernel Simulation Memory Usage: 17076 KB (Peak: 17076 KB), Simulation CPU Usage: 45656 ms

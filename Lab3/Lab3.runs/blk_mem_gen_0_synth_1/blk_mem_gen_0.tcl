@@ -84,11 +84,13 @@ set_property parent.project_path C:/Users/Mark/Documents/Mines/Advanced_Embedded
 set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
+set_property ip_repo_paths c:/Users/Mark/Documents/Mines/Advanced_Embedded/code/ipRepo/rgb2dvi_v1_3 [current_project]
+update_ip_catalog
 set_property ip_output_repo c:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/Lab3.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet c:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/Lab3.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+read_ip -quiet C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/Lab3.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/Lab3.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }

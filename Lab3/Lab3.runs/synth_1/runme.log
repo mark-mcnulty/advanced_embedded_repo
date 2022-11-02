@@ -1,0 +1,133 @@
+
+*** Running vivado
+    with args -log acquireToHDMI.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source acquireToHDMI.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source acquireToHDMI.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Mark/Documents/Mines/Advanced_Embedded/code/ipRepo/rgb2dvi_v1_3'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+Command: synth_design -top acquireToHDMI -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4316
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1294.652 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'acquireToHDMI' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI.vhd:31]
+INFO: [Synth 8-3491] module 'acquireToHDMI_datapath' declared at 'C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:28' bound to instance 'datapath_inst' of component 'acquireToHDMI_datapath' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'acquireToHDMI_datapath' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:47]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'genericRegister' declared at 'C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericRegister.vhd:11' bound to instance 'ch1Reg1' of component 'genericRegister' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:154]
+INFO: [Synth 8-638] synthesizing module 'genericRegister' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericRegister.vhd:18]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'genericRegister' (0#1) [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericRegister.vhd:18]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'signedComparator' declared at 'C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/signedComparator.vhd:12' bound to instance 'ch1Compare1' of component 'signedComparator' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:168]
+INFO: [Synth 8-638] synthesizing module 'signedComparator' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/signedComparator.vhd:20]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'signedComparator' (0#1) [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/signedComparator.vhd:20]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'genericRegister' declared at 'C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericRegister.vhd:11' bound to instance 'ch1Reg2' of component 'genericRegister' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:178]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'signedComparator' declared at 'C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/signedComparator.vhd:12' bound to instance 'ch1Compare2' of component 'signedComparator' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:188]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'genericRegister' declared at 'C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericRegister.vhd:11' bound to instance 'ch2Reg1' of component 'genericRegister' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:204]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'signedComparator' declared at 'C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/signedComparator.vhd:12' bound to instance 'ch2Compare1' of component 'signedComparator' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:219]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'genericRegister' declared at 'C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericRegister.vhd:11' bound to instance 'ch2Reg2' of component 'genericRegister' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:229]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'signedComparator' declared at 'C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/signedComparator.vhd:12' bound to instance 'ch2Compare2' of component 'signedComparator' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:239]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'genericCounter' declared at 'C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericCounter.vhd:15' bound to instance 'shortDelayCounter' of component 'genericCounter' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:255]
+INFO: [Synth 8-638] synthesizing module 'genericCounter' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericCounter.vhd:23]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'genericCounter' (0#1) [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericCounter.vhd:23]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'genericCompare' declared at 'C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericComparator.vhd:10' bound to instance 'shortDelayCompare' of component 'genericCompare' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:265]
+INFO: [Synth 8-638] synthesizing module 'genericCompare' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericComparator.vhd:16]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'genericCompare' (0#1) [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericComparator.vhd:16]
+	Parameter N bound to: 24 - type: integer 
+INFO: [Synth 8-3491] module 'genericCounter' declared at 'C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericCounter.vhd:15' bound to instance 'longDelayCounter' of component 'genericCounter' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:278]
+INFO: [Synth 8-638] synthesizing module 'genericCounter__parameterized1' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericCounter.vhd:23]
+	Parameter N bound to: 24 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'genericCounter__parameterized1' (0#1) [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericCounter.vhd:23]
+	Parameter N bound to: 24 - type: integer 
+INFO: [Synth 8-3491] module 'genericCompare' declared at 'C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericComparator.vhd:10' bound to instance 'longDelayCompare' of component 'genericCompare' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:288]
+INFO: [Synth 8-638] synthesizing module 'genericCompare__parameterized1' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericComparator.vhd:16]
+	Parameter N bound to: 24 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'genericCompare__parameterized1' (0#1) [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericComparator.vhd:16]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'genericCounter' declared at 'C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericCounter.vhd:15' bound to instance 'periodCounter' of component 'genericCounter' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:301]
+INFO: [Synth 8-638] synthesizing module 'genericCounter__parameterized3' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericCounter.vhd:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'genericCounter__parameterized3' (0#1) [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericCounter.vhd:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'genericMux8x1' declared at 'C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericMux8x1.vhd:9' bound to instance 'periodMUX' of component 'genericMux8x1' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:313]
+INFO: [Synth 8-638] synthesizing module 'genericMux8x1' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericMux8x1.vhd:16]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'genericMux8x1' (0#1) [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericMux8x1.vhd:16]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'genericCompare' declared at 'C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericComparator.vhd:10' bound to instance 'periodCompare' of component 'genericCompare' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:328]
+INFO: [Synth 8-638] synthesizing module 'genericCompare__parameterized3' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericComparator.vhd:16]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'genericCompare__parameterized3' (0#1) [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericComparator.vhd:16]
+	Parameter N bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'genericCounter' declared at 'C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericCounter.vhd:15' bound to instance 'bramSaveLocation' of component 'genericCounter' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:347]
+INFO: [Synth 8-638] synthesizing module 'genericCounter__parameterized5' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericCounter.vhd:23]
+	Parameter N bound to: 12 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'genericCounter__parameterized5' (0#1) [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericCounter.vhd:23]
+	Parameter N bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'genericCompare' declared at 'C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericComparator.vhd:10' bound to instance 'atScreenWidth' of component 'genericCompare' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:358]
+INFO: [Synth 8-638] synthesizing module 'genericCompare__parameterized5' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericComparator.vhd:16]
+	Parameter N bound to: 12 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'genericCompare__parameterized5' (0#1) [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericComparator.vhd:16]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'TwosToPixel' declared at 'C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/2sToPixel.vhd:12' bound to instance 'ch1TwosToPixel' of component 'TwosToPixel' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:369]
+INFO: [Synth 8-638] synthesizing module 'TwosToPixel' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/2sToPixel.vhd:20]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'TwosToPixel' (0#1) [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/2sToPixel.vhd:20]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'genericCompare' declared at 'C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericComparator.vhd:10' bound to instance 'ch1Compare' of component 'genericCompare' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:377]
+INFO: [Synth 8-638] synthesizing module 'genericCompare__parameterized7' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericComparator.vhd:16]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'genericCompare__parameterized7' (0#1) [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericComparator.vhd:16]
+INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at 'C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/Lab3.runs/synth_1/.Xil/Vivado-11620-DESKTOP-F6F6K46/realtime/blk_mem_gen_0_stub.vhdl:5' bound to instance 'dataStorage_ch1' of component 'blk_mem_gen_0' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:388]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/Lab3.runs/synth_1/.Xil/Vivado-11620-DESKTOP-F6F6K46/realtime/blk_mem_gen_0_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at 'C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/Lab3.runs/synth_1/.Xil/Vivado-11620-DESKTOP-F6F6K46/realtime/blk_mem_gen_0_stub.vhdl:5' bound to instance 'dataStorage_ch2' of component 'blk_mem_gen_0' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:407]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'TwosToPixel' declared at 'C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/2sToPixel.vhd:12' bound to instance 'ch2TwosToPixel' of component 'TwosToPixel' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:421]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'genericCompare' declared at 'C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/basicBuildingBlocksVhdl/genericComparator.vhd:10' bound to instance 'ch2Compare' of component 'genericCompare' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:430]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'TwosToPixel' declared at 'C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/2sToPixel.vhd:12' bound to instance 'triggerVoltageTwosToPixel' of component 'TwosToPixel' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:443]
+INFO: [Synth 8-3491] module 'scopeFace' declared at 'C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/scopeFace.vhd:10' bound to instance 'scope_face' of component 'scopeFace' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:455]
+INFO: [Synth 8-638] synthesizing module 'scopeFace' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/scopeFace.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'scopeFace' (0#1) [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/scopeFace.vhd:28]
+INFO: [Synth 8-3491] module 'rgb2dvi_0' declared at 'C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/Lab3.runs/synth_1/.Xil/Vivado-11620-DESKTOP-F6F6K46/realtime/rgb2dvi_0_stub.vhdl:5' bound to instance 'rgb2_dvi' of component 'rgb2dvi_0' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:474]
+ERROR: [Synth 8-3493] module 'rgb2dvi_0' declared at 'C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/Lab3.runs/synth_1/.Xil/Vivado-11620-DESKTOP-F6F6K46/realtime/rgb2dvi_0_stub.vhdl:5' does not have matching formal port for component port 'arst' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:474]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:518]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:529]
+ERROR: [Synth 8-285] failed synthesizing module 'acquireToHDMI_datapath' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI_datapath.vhdl:47]
+ERROR: [Synth 8-285] failed synthesizing module 'acquireToHDMI' [C:/Users/Mark/Documents/Mines/Advanced_Embedded/code/Lab3/acquireToHDMI.vhd:31]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1294.652 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+67 Infos, 2 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  2 10:13:16 2022...
